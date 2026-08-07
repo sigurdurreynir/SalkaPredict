@@ -5,12 +5,14 @@ Gögnum er safnað með vefskrapi af mismunandi síðum og heilstætt gagnasett 
 út frá því. Notast er við gögn frá premierleague.com fyrir ítarlega tölfræði,
 understat.com fyrir tölfræðibreytur eins og xG, PPDA og football-data.co.uk (veðbankastuðla),
 Þessi gögn eru svo sameinuð í eitt gagnasett sem nær yfir átta tímabil (2017/18–2025/26).
+Finna má skröpuð gögn undir /data. gagnahreinsun og feature engineering undir /notebooks og 
+þjálfun líkana undir /models
 
 ## Ferlið
 
 - **Vefskröpun**: Sérsmíðaðir skraparar sækja tölfræði hvers leiks af þremur
   heimildum. Selenium er notað fyrir premierleague.com, og létt requests-lausn
-  fyrir understat. Passað er að skrapa af heillindum og ekki drekkja síðunum í requests
+  fyrir understat. Passað er að skrapa af heilindum og ekki drekkja síðunum í fyrirspurnum
   svo þetta ferli er frekar hægt.
   Eftir tímabilið 2024/2025 uppfærði premierleague.com html kóðann á síðunni svo til að skrapa 
   hana fyrir tímabilið 2025/2026 þurfti að breyta skröpunarkóðanum
